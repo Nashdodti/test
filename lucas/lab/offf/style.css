@@ -1,0 +1,80 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "jaapokki";
+  src: url("fonts/jaapokki-regular.woff") format("woff"),
+    url("fonts/jaapokki-regular.eot") format("eot"),
+    url("fonts/jaapokki-regular.svg") format("svg");
+}
+@font-face {
+  font-family: "jaapokki-subtract";
+  src: url("fonts/jaapokkisubtract-regular.woff") format("woff"),
+    url("fonts/jaapokkisubtract-regular.eot") format("eot"),
+    url("fonts/jaapokkisubtract-regular.svg") format("svg");
+}
+@font-face {
+  font-family: "jaapokki-enchance";
+  src: url("fonts/jaapokkienchance-regular.woff") format("woff"),
+    url("fonts/jaapokkienchance-regular.eot") format("eot"),
+    url("fonts/jaapokkienchance-regular.svg") format("svg");
+}
+
+.letter {
+  position: relative;
+  top: 0;
+  left: 0;
+  will-change: left, top;
+  font-family: "jaapokki-subtract";
+  font-size: 100px;
+  transition: all 0.5s ease-out;
+  user-select: none;
+}
+
+.letter:hover {
+  cursor: pointer;
+}
+
+.titleContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+}
+
+.titleContainer > div {
+  display: flex;
+  margin: 50px 0;
+}
+.titleContainer > div p {
+  margin: 0 50px;
+}
+
+.title_1 {
+  align-self: flex-start;
+}
+.title_1 p:first-child {
+  font-family: "jaapokki-enchance";
+}
+
+.title_3 {
+  align-self: flex-end;
+}
+canvas {
+  vertical-align: top;
+}

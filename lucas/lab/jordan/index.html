@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from lucasmartin.fr/lab/jordan/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Oct 2020 17:07:01 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <title>Michael Jordan Particles</title>
+    <style>
+        a {
+            z-index: 5;
+            display: inline-block;
+            position: relative;
+            font-family: Trebuchet, Arial;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            text-decoration: none;
+            padding: 5px 25px;
+            border: 1px solid black;
+            -webkit-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            background-color: black;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        a:hover:after {
+            opacity: 1;
+            -webkit-transform: rotate(45deg) translate(0);
+            -ms-transform: rotate(45deg) translate(0);
+            -o-transform: rotate(45deg) translate(0);
+            transform: rotate(45deg) translate(0);
+        }
+
+        a:after {
+            content: " ";
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid red;
+            border-top: 2px solid red;
+            -webkit-transform: rotate(45deg) translate(-15px, 15px);
+            -ms-transform: rotate(45deg) translate(-15px, 15px);
+            -o-transform: rotate(45deg) translate(-15px, 15px);
+            transform: rotate(45deg) translate(-15px, 15px);
+            opacity: 0;
+            transform-origin: center;
+            position: absolute;
+            top: 8px;
+            display: inline-block;
+            -webkit-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+    </style>
+</head>
+
+<body style="overflow:hidden">
+
+    <canvas id="canvas"></canvas>
+    <a href="https://www.youtube.com/watch?v=TXFsXCE9v20" target="blank" rel="noopener">Motion</a>
+
+
+    <script src="vendor/jquery-2.1.4.min.js"></script>
+    <script src="vendor/TweenLite.min.js"></script>
+    <script src="vendor/BezierPlugin.min.js"></script>
+    <script src="vendor/dat.gui.min.js"></script>
+    <script src="js/Particle.js"></script>
+    <script src="js/Picture.js"></script>
+    <script src="js/Mouse.js"></script>
+    <script src="js/Canvas.js"></script>
+    <script src="js/App.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lucasmartin.fr/lab/jordan/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Oct 2020 17:07:08 GMT -->
+</html>
