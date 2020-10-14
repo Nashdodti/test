@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #148b1f;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="heart_copy_5" data-name="heart copy 5" class="cls-1" d="M327.737,4328.01c-3.22,0-5.3,3.22-5.314,5.87-0.021,4.88,9.681,10.9,9.681,10.9s9.7-6.02,9.683-10.9c-0.012-2.65-2.1-5.87-5.316-5.87a7.622,7.622,0,0,0-4.367,1.88,7.622,7.622,0,0,0-4.367-1.88h0Z" transform="translate(-320.11 -4324.39)"/>
+</svg>

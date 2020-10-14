@@ -1,0 +1,16 @@
+<svg id="time" xmlns="http://www.w3.org/2000/svg" width="35.531" height="35.56" viewBox="0 0 35.531 35.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #de6da8;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-1" cx="17.765" cy="17.78" r="17.765"/>
+  <path id="clock" class="cls-2" d="M611.294,5686.77a8.505,8.505,0,1,0,0,.33,1.141,1.141,0,0,0,.008-0.17A1.225,1.225,0,0,0,611.294,5686.77Zm-4.085,1.36h-4.373a1.277,1.277,0,0,1-.922-0.34,1.144,1.144,0,0,1-.414-0.86v-4.32a1.318,1.318,0,1,1,2.635,0v3.09h3.074A1.217,1.217,0,0,1,607.209,5688.13Z" transform="translate(-585.125 -5669)"/>
+</svg>

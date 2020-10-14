@@ -1,0 +1,16 @@
+<svg id="favorites" xmlns="http://www.w3.org/2000/svg" width="35.531" height="35.56" viewBox="0 0 35.531 35.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #df6f6d;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_1_copy_5" data-name="Ellipse 1 copy 5" class="cls-1" cx="17.766" cy="17.78" r="17.766"/>
+  <path id="heart_copy_5" data-name="heart copy 5" class="cls-2" d="M334.225,5680.96c-2.77,0-4.561,2.81-4.571,5.12-0.018,4.24,8.327,9.48,8.327,9.48s8.346-5.24,8.328-9.48c-0.01-2.31-1.8-5.12-4.572-5.12-1.27,0-2.873,1.22-3.756,2.01-0.884-.79-2.486-2.01-3.756-2.01h0Z" transform="translate(-320.094 -5669.28)"/>
+</svg>
