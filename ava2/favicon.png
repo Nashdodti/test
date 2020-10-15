@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from avehtml.liquid-themes.com/index-business.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 15 Oct 2020 10:48:10 GMT -->
+<!-- Mirrored from Nashhtml.liquid-themes.com/index-business.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 15 Oct 2020 10:48:10 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="utf-8">
@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#3ed2a7">
 <link rel="shortcut icon" href="favicon.png" />
-<title>Ave HTML Template</title>
+<title>Nash HTML Template</title>
 <link href="../external.html?link=https://fonts.googleapis.com/css?family=Barlow:600,700" rel="stylesheet">
 <link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
 <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
@@ -113,10 +113,10 @@
 <div class="navbar-header">
 <a class="navbar-brand" href="index.html" rel="home">
 <span class="navbar-brand-inner">
-<img class="logo-dark" src="assets/img/logo/logo-1.svg" alt="Ave HTML Template">
-<img class="logo-sticky" src="assets/img/logo/logo-light.svg" alt="Ave HTML Template">
-<img class="mobile-logo-default" src="assets/img/logo/logo-1.svg" alt="Ave HTML Template">
-<img class="logo-default" src="assets/img/logo/logo-light.svg" alt="Ave HTML Template">
+<img class="logo-dark" src="assets/img/logo/logo-1.svg" alt="Nash HTML Template">
+<img class="logo-sticky" src="assets/img/logo/logo-light.svg" alt="Nash HTML Template">
+<img class="mobile-logo-default" src="assets/img/logo/logo-1.svg" alt="Nash HTML Template">
+<img class="logo-default" src="assets/img/logo/logo-light.svg" alt="Nash HTML Template">
 </span>
 </a>
 <button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
@@ -397,7 +397,7 @@ Great things in business are never done by one person. They’re done by a team 
 <div class="row">
 <div class="lqd-column col-md-5" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateX":-47,"opacity":0},"animations":{"translateX":0,"opacity":1}}'>
 <header class="fancy-title">
-<h2>Ave is better</h2>
+<h2>Nash is better</h2>
 </header>
 <div class="iconbox iconbox-inline iconbox-xs mb-25" data-plugin-options='{"color": "#ffc70a"}'>
 <div class="iconbox-icon-wrap">
@@ -716,7 +716,7 @@ Sam Smith</a>
 <h5 class="my-0 font-size-30 text-white">Send a message</h5>
 </header>
 <div class="contact-form contact-form-inputs-sm contact-form-inputs-underlined contact-form-button-md contact-form-button-block">
-<form action="../external.html?link=http://avehtml.liquid-themes.com/assets/php/mailer.php" method="post" novalidate="novalidate">
+<form action="../external.html?link=http://Nashhtml.liquid-themes.com/assets/php/mailer.php" method="post" novalidate="novalidate">
 <div class="row">
 <div class="lqd-column col-md-12">
 <input type="text" name="name" aria-required="true" aria-invalid="false" placeholder="Name" required>
@@ -837,7 +837,7 @@ Courbevoie, Paris, France
 </ul>
 </div>
 <div class="lqd-column col-md-6 text-md-right">
-<p class="my-0"><span style="font-size: 15px;">© 2019 Ave theme. Made with love.</span></p>
+<p class="my-0"><span style="font-size: 15px;">© 2019 Nash theme. Made with love.</span></p>
 </div>
 </div>
 </div>
@@ -888,7 +888,7 @@ Courbevoie, Paris, France
 	}
 </style>
 <div class="lqd-buy-now">
-<a href="../external.html?link=https://themeforest.net/item/ave-responsive-multipurpose-wordpress-theme/22854075" class="lqd-buy-now-btn" target="_blank">
+<a href="../external.html?link=https://themeforest.net/item/Nash-responsive-multipurpose-wordpress-theme/22854075" class="lqd-buy-now-btn" target="_blank">
 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20" fill="#82B541">
 <path d="M14.497563,0.148321298 C13.9313377,-0.165959075 12.3082242,0.028364272 10.3587994,0.631807926 C6.9470245,2.96389916 4.06756337,6.39966541 3.86662657,11.9169147 C3.83004142,12.0488323 3.49352854,11.8989739 3.42697175,11.8581674 C2.50565955,10.0923015 2.14065249,8.23286207 2.9099253,5.55046816 C3.05331088,5.31175016 2.58452867,5.01787304 2.50024214,5.10180777 C2.33138767,5.27094366 1.62747563,6.02079819 1.15995983,6.83172178 C-1.15742701,10.8517245 0.358041825,16.00263 4.41244861,18.2568371 C8.46601114,20.514562 13.5847639,19.0581922 15.8417853,15.0034337 C18.4529085,10.3234914 16.0283695,1.00328774 14.4976334,0.14846201 L14.497563,0.148321298 Z" />
 </svg>
@@ -897,5 +897,5 @@ Looking for WordPress Version?
 </div>
 </body>
 
-<!-- Mirrored from avehtml.liquid-themes.com/index-business.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 15 Oct 2020 10:48:50 GMT -->
+<!-- Mirrored from Nashhtml.liquid-themes.com/index-business.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 15 Oct 2020 10:48:50 GMT -->
 </html>
