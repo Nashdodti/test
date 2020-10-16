@@ -1,0 +1,2110 @@
+
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from blindsight.space/memories/memory-08/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 16 Oct 2020 18:55:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+
+    <title> Memories </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Sci fi, novel, Blindsight, space, 3D, motion, render, film, short, design, Peter Watts, future, cosmos, making of, behind the scenes, production, memories, logs, animation, spiral, development, space suits, aliens, Rorschach, Thesus, interface"/>
+
+    <meta name="description" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="../../static/img/share/share-memory08.jpg"/>
+    <meta property="og:image:width" content="1440"/>
+    <meta property="og:image:height" content="640"/>
+    <meta property="og:url" content="index.html">
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+
+    <meta name="csrf-token" content="e7rBq8xqNPSBbrapYMuB03NTE2APX4HL3dflygO6OZIHogoUl4OVBXOJUZAuZbuM">
+
+    <link rel="stylesheet" href="../../../cdn.plyr.io/3.6.2/plyr.css" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../static/favicon/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="../../static/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../static/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="../../static/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../static/favicon/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120"
+          href="../../static/favicon/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../static/favicon/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+          href="../../static/favicon/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-128.png" sizes="128x128"/>
+    <link rel="shortcut icon" href="../../static/favicon/favicon.ico" type="image/x-icon"/>
+    <meta name="application-name" content="Blindsight"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="../../static/favicon/mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="../../static/favicon/mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="../../static/favicon/mstile-150x150.png"/>
+
+    <script>
+        var positionStickySupport = function () {
+            var el = document.createElement('a');
+            var mStyle = el.style;
+
+            mStyle.cssText = 'position:sticky;position:-webkit-sticky;position:-ms-sticky;';
+
+            return mStyle.position.indexOf('sticky') !== -1;
+        }();
+
+        var isMac = window.navigator.userAgent.indexOf('Mac') !== -1;
+        var isFirefox = window.navigator.userAgent.indexOf('Firefox') !== -1;
+        var isEdge = /Edge\/\d./i.test(navigator.userAgent);
+        var ieLTE10 = (!!window.ActiveXObject && +(/msie\s(\d+)/i.exec(navigator.userAgent)[1])) || NaN;
+        var ie11 = navigator.userAgent.indexOf('Trident/index.html') !== -1 && (navigator.userAgent.indexOf('rv:') !== -1 || navigator.appName.indexOf('Netscape') !== -1);
+        var isIE = ieLTE10 || ie11;
+
+        document.documentElement.className += ' ' + (positionStickySupport ? 'isSticky' : 'isNotSticky');
+        document.documentElement.className += ' ' + (isMac ? 'isMac' : 'isNotMac');
+        document.documentElement.className += ' ' + (isFirefox ? 'isFirefox' : 'isNotFirefox');
+        document.documentElement.className += ' ' + (isEdge ? 'isEdge' : 'isNotEdge');
+        document.documentElement.className += ' ' + (isIE ? 'isIE' : 'isNotIE');
+    </script>
+
+
+
+        <link href="../../static/app/front/main.d6f42af8c86e629968df.css" rel="stylesheet">
+</head>
+<body class="">
+<img style="display:none" alt="" src="../../static/svg/front.sprite.svg">
+
+
+<div class="Content MemoriesPage">
+            <header class="Header">
+        <div class="Header-openMenu">Menu</div>
+        <div class="Header-menuWrapper">
+            <div class="Header-closeMenu">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>            </div>
+            <nav class="Header-menu">
+                <a href="../../index.html" data-id="index" class="Header-menuItem u-Route">
+                    Blindsight
+                    <span class="Header-menuItemSeparator"></span>
+                </a>
+                <a href="../index.html" data-id="memories" class="Header-menuItem u-Route">
+                    Memories
+                    <span class="Header-menuItemSeparator"></span>
+                </a>
+                <a href="../../about/index.html" data-id="about" class="Header-menuItem u-Route">
+                    About
+                    <span class="Header-menuItemSeparator"></span>
+                </a>
+            </nav>
+            <div class="Header-menuButtonWrapper">
+                <a href="#" class="Header-menuButton">Watch Film</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="Content-body">
+        <div class="Content-content">
+    <div class="MemoriesSection PageSection">
+        <div class="MemoriesSection-wrapper NeedFixOnPopup">
+                <div class="MemoriesNav isSpiral">
+        <div class="MemoriesNav-inner">
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-06/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/6.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/6.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:06</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Equipment</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-07/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/7.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/7.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:07</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Characters</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/8.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/8.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:08</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Debrief</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../../about/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/9.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/9.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">File:</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">About</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-01/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/1.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/1.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:01</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Space Suit</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-02/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/2.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/2.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:02</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Rorschach</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-03/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/3.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/3.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:03</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Theseus</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-04/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/4.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/4.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:04</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Scramblers</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-05/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/5.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/5.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:05</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Interfaces</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-06/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/6.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/6.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:06</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Equipment</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-07/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/7.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/7.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:07</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Characters</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/8.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/8.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:08</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Debrief</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../../about/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/9.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/9.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">File:</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">About</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-01/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/1.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/1.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:01</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Space Suit</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-02/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/2.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/2.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:02</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Rorschach</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-03/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/3.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/3.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:03</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Theseus</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-04/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/4.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/4.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:04</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Scramblers</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-05/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/5.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/5.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:05</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Interfaces</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        <div class="MemoriesNav-control">
+            <div class="MemoriesNav-controlPrev">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>            </div>
+            <div class="MemoriesNav-controlNext">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>            </div>
+        </div>
+    </div>
+
+                <div class="MemoriesSlider">
+        <div class="MemoriesSlider-inner swiper-container">
+            <div class="swiper-wrapper">
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-01/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/1m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:01</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Space Suit</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-02/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/2m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:02</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Rorschach</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-03/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/3m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:03</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Theseus</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-04/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/4m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:04</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Scramblers</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-05/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/5m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:05</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Interfaces</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-06/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/6m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:06</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Equipment</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-07/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/7m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:07</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Characters</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/8m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:08</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Debrief</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../../about/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/9m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:09</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">About</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="MemoriesSlider-hint">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>        </div>
+    </div>
+
+                <div class="MemoriesSwitch">
+        <a href="#" class="MemoriesSwitch-item isActive">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-spiral"></use>
+    </svg>        </a>
+        <a href="#" class="MemoriesSwitch-item">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-grid"></use>
+    </svg>        </a>
+    </div>
+
+                <div class="CommonVideo-background">
+        <video preload="auto" autoplay loop muted canplaythrough playsinline poster="../../static/img/memories/videoPoster.jpg" data-src="/static/videos/about.mp4"></video>
+        <picture>
+            <source srcset="/static/img/memories/backgroundMobile.jpg" media="(max-width: 767px)">
+            <img data-lazy-load data-src="/static/img/memories/backgroundDesktop.jpg" alt="">
+        </picture>
+    </div>
+
+                <div class="CommonVideoPopup">
+        <a href="#" class="CommonVideoPopup-close">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>        </a>
+        <div class="CommonVideoPopup-inner">
+            <div class="plyr__video-embed VimeoPlayer">
+                <iframe src="../../../external.html?link=https://player.vimeo.com/video/467342474?title=0&amp;byline=0&amp;portrait=0" width="100%" height="100%" allowfullscreen allowtransparency frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div class="Section-content">
+
+
+<div class="MemoriesPopup">
+    <div class="MemoriesPopup-overlay"></div>
+    <div class="MemoriesPopup-inner">
+        <a href="#" class="MemoriesPopup-close">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>        </a>
+        <div class="HorizontalPage">
+            <div class="MemoriesPopup-content">
+                    <div class="MemoriesPopup-intro Cursor-redZone isAnimated">
+        <div class="MemoriesPopup-introTitle">Debrief</div>
+        <div class="MemoriesPopup-introHeader">
+            <div class="MemoriesPopup-introNumber">08 →</div>
+            <div class="MemoriesPopup-introSize">Memory: <span>45.6</span>mb</div>
+        </div>
+        <div class="MemoriesPopup-introFooter">
+            <div class="MemoriesPopup-introDescription">Book Reference ↓<br>Chapter 4 / Peter Watts “Blindsight”</div>
+            <p class="MemoriesPopup-introText">→Sometimes it seems as though my whole life's been a struggle to reconnect, to regain whatever got lost when my parents killed their only child. Out in the Oort, I finally won that struggle. Thanks to a vampire and a boatload of freaks and an invading alien horde, I'm Human again. Maybe the last Human. By the time I get home, I could be the only sentient being in the universe.<br><br>If I'm even that much. Because I don't know if there is such a thing as a reliable narrator. And Cunningham said zombies would be pretty good at faking it.<br><br>So I can't really tell you, one way or the other.<br><br>You'll just have to imagine you're Siri Keeton.</p>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isMediumSize
+ isAnimated">
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-01</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎I read Blindsight for the first time in 2009, when it was translated into Russian. It enjoyed cult status in the 3D-design community at the time, and a friend of mine recommended it to me. I was blown away by the amount of technical, scientific, and psychological details Peter Watts packed into the novel, while still keeping it a tense and fascinating read.</p>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-02</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎It felt like it contained enough excellent, thought-provoking ideas for five books, rather than just one. The text was so vivid that reading it felt, to me, like watching a movie inside my head. However, I had no ambitions to make this movie I imagined, since that was obviously an impossible task, so I patiently waited for someone in Hollywood to pick up the story and make it into a movie.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-video isAnimated"
+        style="background: 
+                radial-gradient(transparent 3px, #15151c 3px),
+                radial-gradient(transparent 3px, #15151c 3px),
+                linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+            background-color: #15151c;">
+        <div class="MemoriesPopup-videoCover">
+                <div class="CommonVideoPlayer">
+        <div class="CommonVideoPlayer-inner Cursor-play">
+            <video canplaythrough playsinline class="CommonVideoPlayer-cover">
+                <source src="../../static/videos/popups/8/8.mp4" type="video/mp4">
+            </video>
+            <div class="CommonVideoPlayer-playback isPlay">
+            </div>
+            <img src="../../static/img/popups/8/video-poster-1.jpg" class="CommonVideoPlayer-image" alt="">
+            <img src="../../static/img/popups/8/video-poster-hover-1.jpg" class="CommonVideoPlayer-image" alt="">
+        </div>
+        <div class="CommonVideoPlayer-controls">
+            <div class="CommonVideoPlayer-controlsCurrentTime">00:00</div>
+            <div class="CommonVideoPlayer-controlsTimeline">
+                <div class="CommonVideoPlayer-controlsTimelineProgress"></div>
+                <div class="CommonVideoPlayer-controlsTimelineLine"></div>
+            </div>
+            <div class="CommonVideoPlayer-controlsDuration">00:00</div>
+        </div>
+    </div>
+
+        </div>
+        <div class="MemoriesPopup-videoFooter">
+            <div class="MemoriesPopup-videoTitle">Danil Krivoruchko</div>
+            <div class="MemoriesPopup-videoFooterInner">
+                <div class="MemoriesPopup-videoCaption">Director</div>
+                <div class="MemoriesPopup-videoFile">File→<br>Interview_01.mp4</div>
+            </div>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isMediumSize
+ isAnimated">
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-03</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎A few years later I decided to give the book another read, this time in English. To my surprise, I found that the novel was freely available to anyone under Creative Commons. I also discovered a link for donations / notes on the author’s site, which I happily took advantage of. I hadn’t expected Peter to respond, but amazingly, he did. After a brief message exchange with him, I reached out to some of my friends in 3D and animation.<br><br>We ended up deciding that making a few renders based off Peter Watts’ book was a good way to show our love for the best sci-fi novel out there.. And that is how this project got started.</p>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-04</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎Initially, we just wanted to make a bunch of still frames. Creating a full CG animated short felt too time-consuming and ambitious. But as time passed, more and more images were made, which helped attract even more incredibly talented people to the project. As the team grew, we realized that we now had enough resources to pull off animation (or so we thought, ha).<br><br>But everyone involved could only participate in the spare time they had between commercial projects, so the work moved quite slowly.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-video isAnimated"
+        style="background: 
+                radial-gradient(transparent 3px, #15151c 3px),
+                radial-gradient(transparent 3px, #15151c 3px),
+                linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+            background-color: #15151c;">
+        <div class="MemoriesPopup-videoCover">
+                <div class="CommonVideoPlayer">
+        <div class="CommonVideoPlayer-inner Cursor-play">
+            <video canplaythrough playsinline class="CommonVideoPlayer-cover">
+                <source src="../../static/videos/popups/8/9.mp4" type="video/mp4">
+            </video>
+            <div class="CommonVideoPlayer-playback isPlay">
+            </div>
+            <img src="../../static/img/popups/8/video-poster-2.jpg" class="CommonVideoPlayer-image" alt="">
+            <img src="../../static/img/popups/8/video-poster-hover-2.jpg" class="CommonVideoPlayer-image" alt="">
+        </div>
+        <div class="CommonVideoPlayer-controls">
+            <div class="CommonVideoPlayer-controlsCurrentTime">00:00</div>
+            <div class="CommonVideoPlayer-controlsTimeline">
+                <div class="CommonVideoPlayer-controlsTimelineProgress"></div>
+                <div class="CommonVideoPlayer-controlsTimelineLine"></div>
+            </div>
+            <div class="CommonVideoPlayer-controlsDuration">00:00</div>
+        </div>
+    </div>
+
+        </div>
+        <div class="MemoriesPopup-videoFooter">
+            <div class="MemoriesPopup-videoTitle">Peter Watts</div>
+            <div class="MemoriesPopup-videoFooterInner">
+                <div class="MemoriesPopup-videoCaption">Writer</div>
+                <div class="MemoriesPopup-videoFile">File→<br>Interview_02.mp4</div>
+            </div>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isLargeSize
+ isAnimated">
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-05</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎I began by simply creating a few style-frames and then gradually moving on to animation tests. At a certain point it began seeming as though there might be enough resources to create something beyond just a series of shots. But at the same time, since there was zero financial backing, it was clear that a short with realistic characters, dialogue and a full script was out of the question.<br><br>That was simply not within the realm of possibility for our team.</p>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-06</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎Eventually I landed on the idea of making a mini-short based on the protagonist Siri’s memories and voice-over narration. The entire novel is Siri’s retelling of the events that took place at first contact with a member of an extraterrestrial civilization, so this seemed like a good framework for our short. We chose around 40 key scenes from the book (omitting dialogue) and then whittled the short-list down to 20.</p>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-07</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎After that the overarching structure of the story became clearer - we were going to begin and end on the hero waking from cryo-sleep. In between these framing scenes, we would focus on his memories, which were going to be shown in reverse order - starting with the final battle between Theseus and Rorschach and ending on the first appearance of the Fireflies in the sky of the Earth, the moment when humanity discovered that we are not alone in this universe.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isAnimated">
+        <div class="MemoriesPopup-gallery">
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <img data-lazy-load data-src="/static/img/popups/8/1.png" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">First draft</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Storyboard</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Boards_bw.zip</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isSmallSize isAnimated">
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-08</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎I was lucky enough to get to work with an extremely talented storyboard artist in the early stages of the project. Now that we have the final short, it’s curious to see how closely every shot resembles her initial sketches, made 4 years earlier.<br><br>When the content of each shot was clear we moved on to previs, which would make editing the scenes’ layouts, animation and camera movements much easier. This is also where the video editor got involved - I kept updating the previs until everyone was happy with the overall rhythm and montage.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isCentered isAnimated">
+        <div class="MemoriesPopup-gallery" data-gallery>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/18.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/19.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/20.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/21.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/22.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/23.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+            <div class="MemoriesPopup-galleryOverlay"></div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">Final</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Storyboard</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Boards_tory_final.zip</div>
+                </div>
+            </div>
+                <div class="MemoriesPopup-galleryNav">
+                    <a href="#" class="MemoriesPopup-galleryNavPrev" data-gallery-prev>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                    </a>
+                    <a href="#" class="MemoriesPopup-galleryNavNext" data-gallery-next>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                    </a>
+                </div>
+        </div>
+            <div class="MemoriesPopup-galleryZoom">
+                <div class="MemoriesPopup-galleryZoomInner" data-gallery>
+                </div>
+                <div class="MemoriesPopup-galleryZoomClose Cursor-close">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>                </div>
+                    <div class="MemoriesPopup-galleryZoomNav">
+                        <a href="#" class="MemoriesPopup-galleryZoomNavPrev" data-gallery-prev>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                        </a>
+                        <a href="#" class="MemoriesPopup-galleryZoomNavNext" data-gallery-next>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                        </a>
+                    </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isCentered isVideoGallery isAnimated">
+        <div class="MemoriesPopup-gallery" data-gallery>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/8/1.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/8/v1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/8/2.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/8/v2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/8/3.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/8/v3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/8/4.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/8/v4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/8/5.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/8/v5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/8/6.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/8/v6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/8/7.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/8/v7.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+            <div class="MemoriesPopup-galleryOverlay"></div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">Sample scenes</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Previzualization</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Previz_015_03_02.zip</div>
+                </div>
+            </div>
+                <div class="MemoriesPopup-galleryNav">
+                    <a href="#" class="MemoriesPopup-galleryNavPrev" data-gallery-prev>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                    </a>
+                    <a href="#" class="MemoriesPopup-galleryNavNext" data-gallery-next>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                    </a>
+                </div>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isMediumSize
+ isAnimated">
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-09</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎Next came the most time-consuming part of the process - each scene required detailed modeling, realistic materials for each of the objects and animation of these objects and the characters. For certain shots this process ended up taking over a year.<br><br>Then all these scenes needed to be rendered. A four-and-a-half minute animation is no joke, when rendering certain frames takes up to 15-20 minutes. Since there was no budget, render-farms were not an option, so almost all the scenes were rendered at home, at night, on my personal computer. The rendering alone took around a month and a half of pure computation, at the very least.</p>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+ isWhiteTheme">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Danil K-10</div>
+                    <div class="MemoriesPopup-chatItemDate">08/09/2020</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎When we finished the rendering and shot compositing, the video editor went over the whole thing again, checking and tightening every cut. And finally, each shot went through color-correction, in order to unify all the color schemes and set the tone for the entire film.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isCentered isAnimated">
+        <div class="MemoriesPopup-gallery" data-gallery>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/24.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/25.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/26.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/27.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/28.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/29.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/30.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/31.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/32.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/33.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/34.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/35.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/36.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/37.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/38.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/39.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/40.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/41.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/42.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/43.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/44.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/45.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/46.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/47.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/48.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/49.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/50.jpg" alt="">
+                    </div>
+                </div>
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            radial-gradient(transparent 3px, #62656d 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #62656d;"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/8/51.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+            <div class="MemoriesPopup-galleryOverlay"></div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">Final frames</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Color grading</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Bs_cc.zip</div>
+                </div>
+            </div>
+                <div class="MemoriesPopup-galleryNav">
+                    <a href="#" class="MemoriesPopup-galleryNavPrev" data-gallery-prev>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                    </a>
+                    <a href="#" class="MemoriesPopup-galleryNavNext" data-gallery-next>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                    </a>
+                </div>
+        </div>
+            <div class="MemoriesPopup-galleryZoom">
+                <div class="MemoriesPopup-galleryZoomInner" data-gallery>
+                </div>
+                <div class="MemoriesPopup-galleryZoomClose Cursor-close">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>                </div>
+                    <div class="MemoriesPopup-galleryZoomNav">
+                        <a href="#" class="MemoriesPopup-galleryZoomNavPrev" data-gallery-prev>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                        </a>
+                        <a href="#" class="MemoriesPopup-galleryZoomNavNext" data-gallery-next>
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>                        </a>
+                    </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-acknowledgements isAnimated">
+        <div class="MemoriesPopup-acknowledgementsTitle">Acknowledgements</div>
+        <div class="MemoriesPopup-acknowledgementsList">
+                <div class="MemoriesPopup-acknowledgementsListColumn">
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.rifters.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Peter Watts</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">Thank you for writing the best sci-fi novel I ever read (I mean it!). And for your patience, willingness to answer my endless questions about the most granular details of your book and the positive feedback you provided at each stage. And apologies for my many “it’s too early”’s in response to your requests to publish the drafts we sent you.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://vimeo.com/umukusum" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Viktoriya Yakubova</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For editing the film, but first and foremost for supporting me throughout these last four years. Without you I would have given up after month one.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://echoicaudio.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Echoic Audio</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For turning my 30-page, written in broken English brief into one of the most atmospheric scores I’d ever heard. Seeing the film with your sound for the first time ever, I could hardly believe that this was a project I was actually working on. It was incredible!</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.redshift3d.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">The developers of Redshift renderer</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">Without you we could not have physically dealt with these kinds of volumes. Plus you gifted us a year-long license, so thank you squared!</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.behance.net/mrOmvod" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Artem Otvodenkov</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For interface animation in the space-suit. The task was way too simple for you, next time we’ll go full throttle :)</p>
+                        </div>
+                </div>
+                <div class="MemoriesPopup-acknowledgementsListColumn">
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.behance.net/hramovsky" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Dennis Khramov</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">for designing the HUD interface in the space-suit. I know you only got to do half of what you could have, since I was constantly asking for things to be simplified.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.artstation.com/gr1n" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Evgeny Kashin</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For the concept art for the space-suit and bots. We were incredibly lucky to have you with us from the start. Thank you for believing in this project, even when we had barely anything to show for it.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.artstation.com/hamen" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Ivan Khomenko</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For the concept of Sarasti and Bates. Creating the appearance of a convincing, genetically-reborn vampire is quite the challenge!</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://jamajurabaev.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Jama Jurabaev</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For giving us the shuttle concept. I remember how surprised you were afterwards at how long it took us to create a production-ready model based off your work - that’s how we roll :)</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=http://www.torysica.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Tory Sica</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For the insanely cool storyboards. We had to work extremely hard to have our shots look as good as your boards (Which you made in just a few days. Life is so unfair!)</p>
+                        </div>
+                </div>
+                <div class="MemoriesPopup-acknowledgementsListColumn">
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.artstation.com/splendidfennel" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Alex Malets</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">The only one on our team who knew what to do with organic modeling. Without you, Sarasti would have remained a 2D concept and Siri would never have existed at all.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.artstation.com/akorovkin" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Andrei Korovkin</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For help with modeling all of the textile parts of the space suit. Seeing your model made me wish the entire space suit consisted of textiles, too bad that wasn’t possible according to the script :)</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://dimoshadji.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Dimos Hadjisavvas</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For modeling Theseus’ interior spine and for help with the final details of the shuttle. It was such a pleasure seeing how skilfully you handled the problems thrown at you. We were lucky to have someone on our team as experienced as you at working on shorts.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.artstation.com/makarkoff" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Ivan Makarkoff</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">As if making most of the Theseus model wasn’t enough (just a piddling 60 million polygons!) you also helped us with elements of the shuttle’s interior, the space suit, and the inside of its helmet. Thank you!</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.behance.net/simplewolf" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Kirill Stupin</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For assisting in modeling the bot. I’m super happy with the result, no matter what you say! :)</p>
+                        </div>
+                </div>
+                <div class="MemoriesPopup-acknowledgementsListColumn">
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://alsens.net/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Serge Aleynikov</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For doing most of the modeling work on the space suit. If you hadn’t set us straight, the characters would still be wearing a weird mix of scuba diving gear and the Power armor from Fallout :)</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.instagram.com/bondjo/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Slava Kislyakov</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For modeling the shuttle. You’re responsible for around 60% of the model and those are undoubtedly its best 60%!</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.artstation.com/sorokin" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Valentine Sorokin</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For help with parts of the shuttle and for the models you gave us which came in really handy with the bot.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.behance.net/cheprakov" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Alexey Cheprakov</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">I don’t know how many billion voxels were in the simulation of Ben’s atmosphere or how long it took to render the entire thing - but I do know that without you this shot would simply have not existed.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.behance.net/vellocet" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Dmitry Kulikov</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">Theseus’ appearance in the shots on Earth’s and Ben’s orbits is wholly your doing.. Plus you joined the project at a point where I was ready to give it all up, but your enthusiasm drove me to go on. Thank you!</p>
+                        </div>
+                </div>
+                <div class="MemoriesPopup-acknowledgementsListColumn">
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.behance.net/maxchell" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Max Chelyadnikov </a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For the excellent compositing of several shots and priceless advice on the compositing of the rest. Without your pages and pages of instructions on Telegram everything would have definitely ended up looking a lot worse.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://maximgoudin.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Maxim Goudin</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For the shot with the Fireflies above the city. I do not know anybody who is capable of making an architectural shot better than you.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://vimeo.com/user1505374" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Maxim Gureev</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For animating the astronaut in the shot where my animation skills had fallen short even at the previs stage, let alone the final animation.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=http://www.sashavinogradova.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Sasha Vinogradova</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For Sarasti’s outfit and animation. I can imagine the pain of animating the outfits for long shots in Marvelous - thank you for agreeing to go through that.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=https://www.anyaformozova.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Аnya Formozova</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For turning my faltering speech into what you are reading now.</p>
+                        </div>
+                </div>
+                <div class="MemoriesPopup-acknowledgementsListColumn">
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=http://repponen.com/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Anton Repponen</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For the site’s design and for attention to detail. Judging by the volume of work required, another person might have taken as long to do this as it took us to make the entire film, but you managed to do it in just a few weeks.</p>
+                        </div>
+                        <div class="MemoriesPopup-acknowledgementsListItem">
+                            <a href="../../../external.html?link=http://astroshock.ru/" target="_blank" class="MemoriesPopup-acknowledgementsListItemName">Astroshock</a>
+                            <p class="MemoriesPopup-acknowledgementsListItemText">For developing the site. I remember the moment when you responded to my post saying “if we find a developer, there might be a site” by saying, “Danya, WE’LL do the site!”. From that moment on I knew that when it came to the quality of the website development there was nothing to worry about.</p>
+                        </div>
+                </div>
+        </div>
+        <div class="MemoriesPopup-acknowledgementsOwner">Danil Krivoruchko / September, 2020</div>
+    </div>
+
+                    <div class="MemoriesPopup-resources Cursor-redZone isAnimated">
+        <div class="MemoriesPopup-resourcesHeader">
+                <div class="MemoriesPopup-resourcesCaption">Thank you!</div>
+        </div>
+            <p class="MemoriesPopup-resourcesText">This was quite the enthralling journey. When I compare where I am today with where I was at the beginning of this project, it’s striking how approaching challenges that seem, at first, insurmountable, has become much easier. And I got the opportunity to meet and work with a huge number of incredibly talented people. After viewing every shot probably close to 500 times, I can’t tell anymore what the result actually turned out to be, but the process of getting there was undoubtedly worth it.<br><br>Thank you to you all!</p>
+    </div>
+
+                    <div class="MemoriesPopup-next isAnimated">
+        <a href="../memory-01/index.html" class="MemoriesPopup-nextCard Cursor-next u-Route">
+            <div class="MemoriesPopup-nextCardImage">
+                <img src="../../static/img/memories/1.jpg" alt="">
+            </div>
+            <div class="MemoriesPopup-nextCardInner">
+                <div class="MemoriesPopup-nextCardCaption">Memory:01</div>
+                <div class="MemoriesPopup-nextCardFooter">
+                    <div class="MemoriesPopup-nextCardHint">Next →</div>
+                    <div class="MemoriesPopup-nextCardTitle">Space suit</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+                <div class="MemoriesPopup-end"></div>
+            </div>
+        </div>
+        <div class="MemoriesPopup-hintWrapper">
+            <div class="MemoriesPopup-hint">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>            </div>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+<div class="Loader">
+    <div class="Loader-inner">
+        <div class="Loader-title">Loading Memories ↪︎</div>
+        <div class="Loader-percentage">0%</div>
+        <p class="Loader-text">Sometimes we could conceive of things and still not see them, although they stood right before us.</p>
+    </div>
+    <div class="Loader-bar"></div>
+</div>
+
+<div class="Orientation-alert">
+    <div class="Orientation-alertIcon">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-orientation"></use>
+    </svg>    </div>
+    <div class="Orientation-alertTitle">Please rotate your device for a better experience</div>
+</div>
+
+<div class="Cursor">
+    <div class="Cursor-icon Cursor-iconPlay">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-play-small"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconPause">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-pause"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconZoom">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-zoom"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconClose">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconNext">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconMemories">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-arrow"></use>
+    </svg>    </div>
+</div>
+
+
+<script>
+        window.app = {
+            state: {},
+            data: {},
+            settings: {
+                staticUrl: '/static/',
+                mediaUrl: '/media/',
+                urls: {},
+                baseFontSize: 1000, //same value used in const.less!
+                screenWidth: document.documentElement.clientWidth,
+                isMobile: false,
+                isTablet: false
+            }
+        };
+    //auto site zoom
+    (function () {
+        var addEvent = function (object, type, callback) {
+            if (object == null || typeof (object) == 'undefined') {
+                return;
+            }
+            if (object.addEventListener) {
+                object.addEventListener(type, callback, false);
+            } else if (object.attachEvent) {
+                object.attachEvent('on' + type, callback);
+            } else {
+                object['on' + type] = callback;
+            }
+        };
+
+        var applyScale = function (event) {
+            //same value used in conts.less
+
+            // if function called from window resize event we need to check against
+            // zoom on mobile. When zooming we don't need to apply scale. So if the
+            // device width hasn't changed, then it was a zoom and we do nothing
+            if (event && document.documentElement.clientWidth === window.app.settings.screenWidth) {
+                return;
+            }
+
+            window.app.settings.screenWidth = document.documentElement.clientWidth;
+
+            var ww;
+            if (isIE || isEdge) {
+                ww = document.documentElement.clientWidth;
+            } else {
+                ww = window.innerWidth;
+            }
+
+            var baseFontSize = window.app.settings.baseFontSize;
+            var w;
+
+            if (ww >= 1920) {
+                w = ww;
+            }
+
+            if (ww >= 768 && ww < 1920) {
+               w = 1920;
+            }
+
+            if (ww <= 767) {
+                w = ww;
+            }
+
+            if (ww <= 500) {
+                w = 320;
+            }
+
+            //IE and Edge has fair rem support, so weuse zoom instead
+            if (isIE || isEdge) {
+                var scale = Math.min(ww / w, 1);
+                document.body.style.zoom = scale;
+                document.getElementsByClassName('Content')[0].style.marginLeft = Math.round(ww - scale * ww) / scale + 'px';
+                document.getElementsByClassName('Footer')[0].style.marginLeft = Math.round(ww - scale * ww) / scale + 'px';
+            } else {
+                document.documentElement.style.fontSize = (baseFontSize * ww / w) + 'px';
+            }
+        };
+
+        addEvent(window, 'resize', applyScale);
+
+        applyScale();
+
+        setTimeout(applyScale, 17);
+        setTimeout(applyScale, 50);
+        setTimeout(applyScale, 100);
+        setTimeout(applyScale, 300);
+        setTimeout(applyScale, 1000);
+    })();
+</script>
+
+<script>
+    window.onYouTubeIframeAPIReady = function () {
+        window.app.state.youtubePlayerAPIReady = true;
+
+        //if app.vent is not ready yet we will trigger event later, on app.js initialize
+        window.app.vent && window.app.vent.trigger('youtube-ready');
+    };
+
+
+    window.onGoogleMapsAPIReady = function () {
+        window.app.state.googleMapsAPIReady = true;
+
+        //if app.vent is not ready yet we will trigger event later, on app.js initialize
+        window.app.vent && window.app.vent.trigger('google-maps-ready');
+    };
+</script>
+
+
+    <script src="../../../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../static/custom_libs/jquery.min.js"><\/script>');</script>
+
+    <script src="../../../static.sketchfab.com/api/sketchfab-viewer-1.8.2.js"></script>
+
+<script>
+    //This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = '../../../external.html?link=https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
+
+
+<script src="../../static/app/front/main.d6f42af8c86e629968df.js" async></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../../external.html?link=https://www.googletagmanager.com/gtag/js?id=UA-180329372-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180329372-1');
+</script></body>
+
+<!-- Mirrored from blindsight.space/memories/memory-08/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 16 Oct 2020 19:00:00 GMT -->
+</html>

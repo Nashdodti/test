@@ -1,0 +1,1186 @@
+
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from blindsight.space/memories/memory-04/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 16 Oct 2020 19:02:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+
+    <title> Memories </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Sci fi, novel, Blindsight, space, 3D, motion, render, film, short, design, Peter Watts, future, cosmos, making of, behind the scenes, production, memories, logs, animation, spiral, development, space suits, aliens, Rorschach, Thesus, interface"/>
+
+    <meta name="description" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="../../static/img/share/share-memory04.jpg"/>
+    <meta property="og:image:width" content="1440"/>
+    <meta property="og:image:height" content="640"/>
+    <meta property="og:url" content="index.html">
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+
+    <meta name="csrf-token" content="Od2cJlKn5wWQE0CeCRv8XWaW11w8hEdnDjQWRt136GMWRPQJZ9PsyQbMhYwNjL0o">
+
+    <link rel="stylesheet" href="../../../cdn.plyr.io/3.6.2/plyr.css" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../static/favicon/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="../../static/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../static/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="../../static/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../static/favicon/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120"
+          href="../../static/favicon/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../static/favicon/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+          href="../../static/favicon/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="../../static/favicon/favicon-128.png" sizes="128x128"/>
+    <link rel="shortcut icon" href="../../static/favicon/favicon.ico" type="image/x-icon"/>
+    <meta name="application-name" content="Blindsight"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="../../static/favicon/mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="../../static/favicon/mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="../../static/favicon/mstile-150x150.png"/>
+
+    <script>
+        var positionStickySupport = function () {
+            var el = document.createElement('a');
+            var mStyle = el.style;
+
+            mStyle.cssText = 'position:sticky;position:-webkit-sticky;position:-ms-sticky;';
+
+            return mStyle.position.indexOf('sticky') !== -1;
+        }();
+
+        var isMac = window.navigator.userAgent.indexOf('Mac') !== -1;
+        var isFirefox = window.navigator.userAgent.indexOf('Firefox') !== -1;
+        var isEdge = /Edge\/\d./i.test(navigator.userAgent);
+        var ieLTE10 = (!!window.ActiveXObject && +(/msie\s(\d+)/i.exec(navigator.userAgent)[1])) || NaN;
+        var ie11 = navigator.userAgent.indexOf('Trident/index.html') !== -1 && (navigator.userAgent.indexOf('rv:') !== -1 || navigator.appName.indexOf('Netscape') !== -1);
+        var isIE = ieLTE10 || ie11;
+
+        document.documentElement.className += ' ' + (positionStickySupport ? 'isSticky' : 'isNotSticky');
+        document.documentElement.className += ' ' + (isMac ? 'isMac' : 'isNotMac');
+        document.documentElement.className += ' ' + (isFirefox ? 'isFirefox' : 'isNotFirefox');
+        document.documentElement.className += ' ' + (isEdge ? 'isEdge' : 'isNotEdge');
+        document.documentElement.className += ' ' + (isIE ? 'isIE' : 'isNotIE');
+    </script>
+
+
+
+        <link href="../../static/app/front/main.d6f42af8c86e629968df.css" rel="stylesheet">
+</head>
+<body class="">
+<img style="display:none" alt="" src="../../static/svg/front.sprite.svg">
+
+
+<div class="Content MemoriesPage">
+            <header class="Header">
+        <div class="Header-openMenu">Menu</div>
+        <div class="Header-menuWrapper">
+            <div class="Header-closeMenu">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>            </div>
+            <nav class="Header-menu">
+                <a href="../../index.html" data-id="index" class="Header-menuItem u-Route">
+                    Blindsight
+                    <span class="Header-menuItemSeparator"></span>
+                </a>
+                <a href="../index.html" data-id="memories" class="Header-menuItem u-Route">
+                    Memories
+                    <span class="Header-menuItemSeparator"></span>
+                </a>
+                <a href="../../about/index.html" data-id="about" class="Header-menuItem u-Route">
+                    About
+                    <span class="Header-menuItemSeparator"></span>
+                </a>
+            </nav>
+            <div class="Header-menuButtonWrapper">
+                <a href="#" class="Header-menuButton">Watch Film</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="Content-body">
+        <div class="Content-content">
+    <div class="MemoriesSection PageSection">
+        <div class="MemoriesSection-wrapper NeedFixOnPopup">
+                <div class="MemoriesNav isSpiral">
+        <div class="MemoriesNav-inner">
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-06/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/6.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/6.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:06</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Equipment</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-07/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/7.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/7.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:07</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Characters</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-08/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/8.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/8.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:08</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Debrief</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../../about/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/9.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/9.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">File:</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">About</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-01/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/1.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/1.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:01</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Space Suit</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-02/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/2.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/2.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:02</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Rorschach</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-03/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/3.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/3.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:03</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Theseus</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/4.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/4.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:04</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Scramblers</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-05/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/5.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/5.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:05</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Interfaces</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-06/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/6.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/6.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:06</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Equipment</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-07/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/7.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/7.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:07</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Characters</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../memory-08/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/8.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/8.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:08</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Debrief</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper">
+                    <a href="../../about/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/9.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/9.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">File:</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">About</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-01/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/1.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/1.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:01</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Space Suit</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-02/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/2.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/2.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:02</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Rorschach</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-03/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/3.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/3.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:03</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Theseus</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/4.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/4.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:04</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Scramblers</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="MemoriesNav-itemWrapper isCloned">
+                    <a href="../memory-05/index.html" class="MemoriesNav-item u-Route">
+                        <div class="MemoriesNav-itemInner">
+                            <div class="MemoriesNav-itemVideo">
+                                <video preload="auto" loop muted canplaythrough playsinline src="#" data-src="/static/videos/memories/5.mp4"></video>
+                                <div data-lazy-load data-src="/static/img/memories/5.jpg" class="MemoriesNav-itemImage"></div>
+                            </div>
+                            <div class="MemoriesNav-itemContent">
+                                <div class="MemoriesNav-itemCaption">Memory:05</div>
+                                <div class="MemoriesNav-itemFooter">
+                                    <div class="MemoriesNav-itemHint">Explore →</div>
+                                    <div class="MemoriesNav-itemTitle">Interfaces</div>
+                                </div>
+                            </div>
+                            <div class="MemoriesNav-itemOverlay"></div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        <div class="MemoriesNav-control">
+            <div class="MemoriesNav-controlPrev">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>            </div>
+            <div class="MemoriesNav-controlNext">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>            </div>
+        </div>
+    </div>
+
+                <div class="MemoriesSlider">
+        <div class="MemoriesSlider-inner swiper-container">
+            <div class="swiper-wrapper">
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-01/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/1m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:01</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Space Suit</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-02/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/2m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:02</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Rorschach</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-03/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/3m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:03</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Theseus</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/4m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:04</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Scramblers</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-05/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/5m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:05</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Interfaces</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-06/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/6m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:06</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Equipment</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-07/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/7m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:07</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Characters</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../memory-08/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/8m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:08</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">Debrief</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="MemoriesSlider-itemWrapper swiper-slide">
+                        <a href="../../about/index.html" class="MemoriesSlider-item u-Route">
+                            <div class="MemoriesSlider-itemImage">
+                                <img data-lazy-load data-src="/static/img/memories/9m.jpg" alt="">
+                            </div>
+                            <div class="MemoriesSlider-itemContent">
+                                <div class="MemoriesSlider-itemCaption">Memory:09</div>
+                                <div class="MemoriesSlider-itemFooter">
+                                    <div class="MemoriesSlider-itemHint">Explore →</div>
+                                    <div class="MemoriesSlider-itemTitle">About</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="MemoriesSlider-hint">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>        </div>
+    </div>
+
+                <div class="MemoriesSwitch">
+        <a href="#" class="MemoriesSwitch-item isActive">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-spiral"></use>
+    </svg>        </a>
+        <a href="#" class="MemoriesSwitch-item">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-grid"></use>
+    </svg>        </a>
+    </div>
+
+                <div class="CommonVideo-background">
+        <video preload="auto" autoplay loop muted canplaythrough playsinline poster="../../static/img/memories/videoPoster.jpg" data-src="/static/videos/about.mp4"></video>
+        <picture>
+            <source srcset="/static/img/memories/backgroundMobile.jpg" media="(max-width: 767px)">
+            <img data-lazy-load data-src="/static/img/memories/backgroundDesktop.jpg" alt="">
+        </picture>
+    </div>
+
+                <div class="CommonVideoPopup">
+        <a href="#" class="CommonVideoPopup-close">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>        </a>
+        <div class="CommonVideoPopup-inner">
+            <div class="plyr__video-embed VimeoPlayer">
+                <iframe src="../../../external.html?link=https://player.vimeo.com/video/467342474?title=0&amp;byline=0&amp;portrait=0" width="100%" height="100%" allowfullscreen allowtransparency frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div class="Section-content">
+
+
+<div class="MemoriesPopup">
+    <div class="MemoriesPopup-overlay"></div>
+    <div class="MemoriesPopup-inner">
+        <a href="#" class="MemoriesPopup-close">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>        </a>
+        <div class="HorizontalPage">
+            <div class="MemoriesPopup-content">
+                    <div class="MemoriesPopup-intro Cursor-redZone isAnimated">
+        <div class="MemoriesPopup-introTitle">Scramblers</div>
+        <div class="MemoriesPopup-introHeader">
+            <div class="MemoriesPopup-introNumber">04 →</div>
+            <div class="MemoriesPopup-introSize">Memory: <span>15.1</span>mb</div>
+        </div>
+        <div class="MemoriesPopup-introFooter">
+            <div class="MemoriesPopup-introDescription">Book Reference ↓<br>Chapter 2 / Peter Watts “Blindsight”</div>
+            <p class="MemoriesPopup-introText">→Scramblers, everywhere. A seething infestation squirming across the walls, reaching out for the intruder, leaping into the lumen of the passageway to press their counterattack. Not against us. They had attacked one of their own.<br><br>I'd seen three of its arms ripped off before it had disappeared into a writhing ball in the center of the passageway.</p>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isMediumSize
+ isAnimated">
+            <div class="MemoriesPopup-chatItem
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: D-01</div>
+                    <div class="MemoriesPopup-chatItemDate">13/08/2016</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎Animating the Scramblers the normal way wouldn’t work, that much was clear from the start - creating the movement of the tentacles was difficult enough, and in scenes featuring dozens of the creatures it became simply impossible.</p>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: D-02</div>
+                    <div class="MemoriesPopup-chatItemDate">13/08/2016</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎For the first test we tried creating tentacles that simply followed the Scramblers’ bodies. We wouldn’t get far with this set up, but at least it solved part of the problem in group scenes.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isVideoGallery isAnimated">
+        <div class="MemoriesPopup-gallery">
+                <div class="MemoriesPopup-galleryItem
+"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/4/1.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/4/v1.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">First test</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Animation</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Scramb_test_01.mp4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isMediumSize
+ isAnimated">
+            <div class="MemoriesPopup-chatItem
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: D-03</div>
+                    <div class="MemoriesPopup-chatItemDate">08/11/2016</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎Hello, Peter.<br><br>We just wanted to share the progress we’ve made with the illustrations and, for the first time ever—the Scramblers in motion.</p>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+ isRedTheme Cursor-redZone
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Peter Watts</div>
+                    <div class="MemoriesPopup-chatItemDate">10/11/2016</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎WOW. The look, the movement of the scramblers is great.  That aesthetic is exactly what I imagined. All I could say is—and this is really minor—all the scramblers you've rendered are juveniles.  As they get older, the central disk thickens and becomes more spheroid; the arms migrate off the equator and end up distributed all over the body.  So the adults don't look as much like earthly brittle stars as these guys do.<br><br>But man, I can't get over how gorgeous the rendering and the movements are.  If you have any more of this stuff, I'd love to see it.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isAnimated">
+        <div class="MemoriesPopup-gallery">
+                <div class="MemoriesPopup-galleryItem
+ MemoriesPopup-galleryZoomOpen Cursor-zoom"
+                    style="background-color: #18191d"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <img data-lazy-load data-src="/static/img/popups/4/1.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+            <div class="MemoriesPopup-galleryOverlay"></div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">Main direction</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Shader test</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Scramb_render_01.jpg</div>
+                </div>
+            </div>
+        </div>
+            <div class="MemoriesPopup-galleryZoom">
+                <div class="MemoriesPopup-galleryZoomInner" data-gallery>
+                            <div class="MemoriesPopup-galleryZoomItem">
+                                <div class="MemoriesPopup-galleryZoomItemInner">
+                                    <img data-src="../../static/img/popups/4/1_zoom.jpg">
+                                </div>
+                            </div> 
+                </div>
+                <div class="MemoriesPopup-galleryZoomClose Cursor-close">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isMediumSize
+ isAnimated">
+            <div class="MemoriesPopup-chatItem
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: D-04</div>
+                    <div class="MemoriesPopup-chatItemDate">11/11/2018</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎But what about the shots in which the Scramblers interact with their surroundings, rather than just wave their tentacles about? After reviewing articles on Octopus locomotion (our closest reference), and several weeks worth of coding, we were able to create a behavior that seemed convincing enough.</p>
+                        <a href="../../../external.html?link=https://www.cell.com/current-biology/fulltext/S0960-9822(15)00266-3" target="_blank" class="MemoriesPopup-chatItemReference">
+                                <div class="MemoriesPopup-chatItemReferenceImage">
+                                    <img src="../../static/img/popups/4/document.jpg" alt="">
+                                </div>
+                            <div class="MemoriesPopup-chatItemReferenceInner">
+                                <div class="MemoriesPopup-chatItemReferenceTitle">→Arm Coordination in Octopus Crawling Involves Unique Motor Control Strategies</div>
+                                <div class="MemoriesPopup-chatItemReferenceText">https://www.cell.com/current-biology/fulltext/S0960-9822(15)00266-3</div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: D-05</div>
+                    <div class="MemoriesPopup-chatItemDate">20/12/2018</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎The movement of the body was still determined manually. Then, based off this movement and our algorithm each of the tentacles independently searches for the most convenient surface area to attach too, as well as when to detach and search for new footholds.<br><br>The system that controlled the “normal” Scramblers and its upgrade created for Scramblers interacting with their environment.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isMediumSize
+ isAnimated">
+        <div class="MemoriesPopup-gallery">
+                <div class="MemoriesPopup-galleryItem
+"
+>
+                    <div class="MemoriesPopup-galleryItemInner isTypeCover">
+                            <img data-lazy-load data-src="/static/img/popups/4/2.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">Animation control</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Script</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Scramb_script.jpg</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isSmallSize isAnimated">
+            <div class="MemoriesPopup-chatItem
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: D-06</div>
+                    <div class="MemoriesPopup-chatItemDate">22/02/2019</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎Time to send off another preview, featuring the “playground” in which we tested the Scramblers movements.</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isVideoGallery isAnimated">
+        <div class="MemoriesPopup-gallery">
+                <div class="MemoriesPopup-galleryItem
+"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/4/2.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/4/v2.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">Animation</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Test</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Scramb_script_animation.mp4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-chat
+ isMediumSize
+ isAnimated">
+            <div class="MemoriesPopup-chatItem
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: D-07</div>
+                    <div class="MemoriesPopup-chatItemDate">26/02/2019</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎Not a big update but I thought you might like this one. Some work in progress on the system that controls the Scramblers leg placement and animation.<br><br>I realized that I have dozens of these guys in one of the shots so animating them manually would take weeks. 85 lines of code and a few pain-in-the-neck hours later each Scrambler can now decide where to place each leg on its own. Not exactly superhuman intelligence but still much better than what I could’ve done by hand.</p>
+                </div>
+            </div>
+            <div class="MemoriesPopup-chatItem
+ isRedTheme Cursor-redZone
+">
+                <div class="MemoriesPopup-chatItemHeader">
+                    <div class="MemoriesPopup-chatItemNumber">Message: Peter Watts</div>
+                    <div class="MemoriesPopup-chatItemDate">12/02/2019</div>
+                </div>
+                <div class="MemoriesPopup-chatItemInner">
+                    <p class="MemoriesPopup-chatItemText">↪︎This is really cool (I especially like the little vector/node thingies). But I've already seen a whole wall of those guys squirming and writhing in the trailers, and they looked incredible months ago without any scrambler-level AI. Why is this necessary?</p>
+                </div>
+            </div>
+    </div>
+
+                            <div class="MemoriesPopup-note isAnimated">
+        <div class="MemoriesPopup-noteQuestion">In scenes that showed multiple Scramblers it was possible to cheat a bit and have the tentacles just flow, following their bodies like seaweed.</div>
+        <div class="MemoriesPopup-noteAnswer">But in the scene where the scrambler swarm attacks Theseus, we needed them to interact with the spaceship’s surface and grip/release with each tentacle in a realistic way. It was a fascinating task to solve. We ended up using Octopus locomotion as a reference.</div>
+    </div>
+
+                            <div class="MemoriesPopup-galleryWrapper
+ isCentered isVideoGallery isAnimated">
+        <div class="MemoriesPopup-gallery">
+                <div class="MemoriesPopup-galleryItem
+ isBackgroundGrid"
+                    style="background: 
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            radial-gradient(transparent 3px, #15151c 3px),
+                            linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px) 0 -.5px,
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px) -.5px 0;
+                        background-color: #15151c;"
+>
+                    <div class="MemoriesPopup-galleryItemInner">
+                            <video preload="none" loop muted canplaythrough playsinline>
+                                <source src="../../static/videos/popups/4/3.mp4" type="video/mp4">
+                            </video>
+                            <img data-lazy-load data-src="/static/img/popups/4/v3.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="MemoriesPopup-galleryFooter">
+            <div class="MemoriesPopup-galleryInfo">
+                <div class="MemoriesPopup-galleryTitle">Shot</div>
+                <div class="MemoriesPopup-galleryInfoInner">
+                    <div class="MemoriesPopup-galleryCaption">Previz</div>
+                    <div class="MemoriesPopup-galleryFile">File→<br>Scramb_shot_previz.mp4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            <div class="MemoriesPopup-film isAnimated">
+        <div class="MemoriesPopup-filmVideo">
+            <video preload="none" loop muted canplaythrough playsinline>
+                <source src="../../static/videos/popups/4/film.mp4" type="video/mp4">
+            </video>
+            <img src="../../static/img/popups/4/film.jpg" alt="">
+        </div>
+        <div class="MemoriesPopup-filmFooter">
+            <div class="MemoriesPopup-filmFooterInner">
+                <div class="MemoriesPopup-filmTitle">Scramblers</div>
+                <div class="MemoriesPopup-filmCaption">In the film</div>
+            </div>
+            <div class="MemoriesPopup-filmButtonWrapper">
+                <a href="#" class="MemoriesPopup-filmButton Button-cta">
+                    <span>Rewatch the Film</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+                        <div class="MemoriesPopup-wallpaper isAnimated">
+        <div class="MemoriesPopup-wallpaperImage">
+            <img src="../../static/img/popups/4/wallpaper.jpg" alt="">
+        </div>
+        <div class="MemoriesPopup-wallpaperFooter">
+            <div class="MemoriesPopup-wallpaperInfo">
+                <div class="MemoriesPopup-wallpaperTitle">Hi-res</div>
+                <div class="MemoriesPopup-wallpaperFile">File→<br>D_01.zip / 1 file</div>
+            </div>
+            <div class="MemoriesPopup-wallpaperButtonWrapper">
+                <a href="../../static/img/popups/4/D_01.zip" download class="MemoriesPopup-wallpaperButton">
+                    <span>Download</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+                    <div class="MemoriesPopup-resources Cursor-redZone isAnimated">
+        <div class="MemoriesPopup-resourcesHeader">
+                <div class="MemoriesPopup-resourcesTitle">Memory:04</div>
+                <div class="MemoriesPopup-resourcesCaption">Logged Resources</div>
+        </div>
+            <ul class="MemoriesPopup-resourcesList">
+                    <li class="MemoriesPopup-resourcesListItem">
+                        <div class="MemoriesPopup-resourcesListItemLine"></div>
+                        <div class="MemoriesPopup-resourcesListItemTitle">Number of people involved:</div>
+                        <div class="MemoriesPopup-resourcesListItemValue">2</div>
+                    </li>
+                    <li class="MemoriesPopup-resourcesListItem">
+                        <div class="MemoriesPopup-resourcesListItemLine"></div>
+                        <div class="MemoriesPopup-resourcesListItemTitle">Hours Spent:</div>
+                        <div class="MemoriesPopup-resourcesListItemValue">262</div>
+                    </li>
+            </ul>
+    </div>
+
+                    <div class="MemoriesPopup-next isAnimated">
+        <a href="../memory-05/index.html" class="MemoriesPopup-nextCard Cursor-next u-Route">
+            <div class="MemoriesPopup-nextCardImage">
+                <img src="../../static/img/memories/5.jpg" alt="">
+            </div>
+            <div class="MemoriesPopup-nextCardInner">
+                <div class="MemoriesPopup-nextCardCaption">Memory:05</div>
+                <div class="MemoriesPopup-nextCardFooter">
+                    <div class="MemoriesPopup-nextCardHint">Next →</div>
+                    <div class="MemoriesPopup-nextCardTitle">Interface</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+                <div class="MemoriesPopup-end"></div>
+            </div>
+        </div>
+        <div class="MemoriesPopup-hintWrapper">
+            <div class="MemoriesPopup-hint">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>            </div>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+<div class="Loader">
+    <div class="Loader-inner">
+        <div class="Loader-title">Loading Memories ↪︎</div>
+        <div class="Loader-percentage">0%</div>
+        <p class="Loader-text">Sometimes we could conceive of things and still not see them, although they stood right before us.</p>
+    </div>
+    <div class="Loader-bar"></div>
+</div>
+
+<div class="Orientation-alert">
+    <div class="Orientation-alertIcon">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-orientation"></use>
+    </svg>    </div>
+    <div class="Orientation-alertTitle">Please rotate your device for a better experience</div>
+</div>
+
+<div class="Cursor">
+    <div class="Cursor-icon Cursor-iconPlay">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-play-small"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconPause">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-pause"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconZoom">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-zoom"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconClose">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-close"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconNext">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-next"></use>
+    </svg>    </div>
+    <div class="Cursor-icon Cursor-iconMemories">
+<svg>
+        <use xlink:href="../../static/svg/front.sprite.svg#i-arrow"></use>
+    </svg>    </div>
+</div>
+
+
+<script>
+        window.app = {
+            state: {},
+            data: {},
+            settings: {
+                staticUrl: '/static/',
+                mediaUrl: '/media/',
+                urls: {},
+                baseFontSize: 1000, //same value used in const.less!
+                screenWidth: document.documentElement.clientWidth,
+                isMobile: false,
+                isTablet: false
+            }
+        };
+    //auto site zoom
+    (function () {
+        var addEvent = function (object, type, callback) {
+            if (object == null || typeof (object) == 'undefined') {
+                return;
+            }
+            if (object.addEventListener) {
+                object.addEventListener(type, callback, false);
+            } else if (object.attachEvent) {
+                object.attachEvent('on' + type, callback);
+            } else {
+                object['on' + type] = callback;
+            }
+        };
+
+        var applyScale = function (event) {
+            //same value used in conts.less
+
+            // if function called from window resize event we need to check against
+            // zoom on mobile. When zooming we don't need to apply scale. So if the
+            // device width hasn't changed, then it was a zoom and we do nothing
+            if (event && document.documentElement.clientWidth === window.app.settings.screenWidth) {
+                return;
+            }
+
+            window.app.settings.screenWidth = document.documentElement.clientWidth;
+
+            var ww;
+            if (isIE || isEdge) {
+                ww = document.documentElement.clientWidth;
+            } else {
+                ww = window.innerWidth;
+            }
+
+            var baseFontSize = window.app.settings.baseFontSize;
+            var w;
+
+            if (ww >= 1920) {
+                w = ww;
+            }
+
+            if (ww >= 768 && ww < 1920) {
+               w = 1920;
+            }
+
+            if (ww <= 767) {
+                w = ww;
+            }
+
+            if (ww <= 500) {
+                w = 320;
+            }
+
+            //IE and Edge has fair rem support, so weuse zoom instead
+            if (isIE || isEdge) {
+                var scale = Math.min(ww / w, 1);
+                document.body.style.zoom = scale;
+                document.getElementsByClassName('Content')[0].style.marginLeft = Math.round(ww - scale * ww) / scale + 'px';
+                document.getElementsByClassName('Footer')[0].style.marginLeft = Math.round(ww - scale * ww) / scale + 'px';
+            } else {
+                document.documentElement.style.fontSize = (baseFontSize * ww / w) + 'px';
+            }
+        };
+
+        addEvent(window, 'resize', applyScale);
+
+        applyScale();
+
+        setTimeout(applyScale, 17);
+        setTimeout(applyScale, 50);
+        setTimeout(applyScale, 100);
+        setTimeout(applyScale, 300);
+        setTimeout(applyScale, 1000);
+    })();
+</script>
+
+<script>
+    window.onYouTubeIframeAPIReady = function () {
+        window.app.state.youtubePlayerAPIReady = true;
+
+        //if app.vent is not ready yet we will trigger event later, on app.js initialize
+        window.app.vent && window.app.vent.trigger('youtube-ready');
+    };
+
+
+    window.onGoogleMapsAPIReady = function () {
+        window.app.state.googleMapsAPIReady = true;
+
+        //if app.vent is not ready yet we will trigger event later, on app.js initialize
+        window.app.vent && window.app.vent.trigger('google-maps-ready');
+    };
+</script>
+
+
+    <script src="../../../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../static/custom_libs/jquery.min.js"><\/script>');</script>
+
+    <script src="../../../static.sketchfab.com/api/sketchfab-viewer-1.8.2.js"></script>
+
+<script>
+    //This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = '../../../external.html?link=https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
+
+
+<script src="../../static/app/front/main.d6f42af8c86e629968df.js" async></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../../external.html?link=https://www.googletagmanager.com/gtag/js?id=UA-180329372-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180329372-1');
+</script></body>
+
+<!-- Mirrored from blindsight.space/memories/memory-04/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 16 Oct 2020 19:05:04 GMT -->
+</html>
